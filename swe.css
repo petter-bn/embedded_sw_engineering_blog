@@ -1,0 +1,84 @@
+
+h1 {
+  color: black;
+  text-align: left;
+  font-family: baskerville, serif;
+  font-size: 24pt;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  text-align: left;
+  font-family: baskerville, serif;
+  font-size: 16pt;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  font-family: gill sans, Verdana, sans-serif;;
+  font-size: 11pt;
+  text-align: left;
+}
+
+.esepart {
+  	background-color: #ffffff;
+    border-style: solid;
+    border-width: 4mm;
+    border-radius: 12mm;
+    margin: 8mm;
+}
+
+.eseparthead {
+
+}
+
+.esepartbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.esechapter {
+    border-radius: 8mm; 
+    margin: 8mm;
+    max-width: 60mm;
+    max-height: 60mm;
+    padding: 4mm;
+
+}
+
+.green {
+  	background-color: hsl(142,75%, 82%);
+}
+
+.blue {
+  	background-color: hsl(208,75%, 82%);
+  }
+
+.red {
+  	background-color: hsl(0,75%, 82%);
+    }
+
+.yellow {
+  	background-color: hsl(39,75%, 82%);
+    }
+
+.greenborder {
+        border-color: hsl(142,75%, 82%);
+}
+
+.blueborder {
+    border-color: hsl(208,75%, 82%);
+  }
+
+.redborder {
+    border-color: hsl(0,75%, 82%);
+    }
+    
+.yellowborder {
+    border-color: hsl(39,75%, 82%);
+    }

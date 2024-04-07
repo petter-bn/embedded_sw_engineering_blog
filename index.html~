@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Embedded Software Engineering</title>
+	<link rel="stylesheet" href="swe.css">
+</head>
+<body>
+
+<div class="esepart">
+    <h1>Embedded Software Design and Verification</h1>
+    <div class="esechapter">
+        <h2>Components</h2>
+        <p>
+            Components are the foundation of all good software
+            engineering. Not only embedded software engineering.
+            Components have an inside and an outside. If you work 
+            outside the component, you only need to know what the
+            component does. Not how it does it. For someone to
+            know this the component need to have a "contract".
+        </p>            
+    </div>
+    <div class="esechapter">
+        <h2>Component Design and Coding</h2>
+        <p>
+            The fundamental skill for a SW developer is to be able to
+            design and implement a software component. When the contract 
+            is specified you need to design the component and 
+            write code that implements the contract. 
+        </p>            
+    </div>
+    <div class="esechapter">
+        <h2>Component Verification</h2>
+        <p>
+            Component verification is the process of making sure a
+            component fulfills the contract. There are many ways to do this
+            and the methods are often combined to achive the quality needed
+            by the project.
+        </p>            
+    </div>
+    <div class="esechapter">
+        <h2>Embedded Software Requirements</h2>
+        <p>
+            The SW requirements for a embedded
+        </p>            
+    </div>
+    <div class="esechapter">
+        <h2>Embedded Software Architecture</h2>
+        <p>
+            The software architecture decides which components a SW
+            contains, and how the components interacts. The SW architecture
+            decides on how common architectural patterns are used, how 
+            software is reused, and designs for aspects like safety, security,
+            reliability, availability, compatibility and performance. The
+            software architecture also designs how several product variants
+            can be produced from one source system and how software is 
+            commissioned and deployed.
+        </p>            
+    </div>
+    <div class="esechapter">
+        <h2>Embedded Software Integration and Verification</h2>
+        <p>
+            The software architecture decides which components a SW
+            contains, and how the components interacts. The SW architecture
+            decides on how common architectural patterns are used, how 
+            software is reused, and designs for aspects like safety, security,
+            reliability, availability, compatibility and performance. The
+            software architecture also designs how several product variants
+            can be produced from one source system and how software is 
+            commissioned and deployed.
+        </p>            
+    </div>
+</div>
+
+</body>
+</html>
