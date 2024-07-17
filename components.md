@@ -4,7 +4,13 @@ A component is a piece of source code[^2] with a specific purpose and an
 interface. All[^1] source code in your SW system should belong to a 
 component.
 
-The software components are the basic building blocks of a SW system. If you design good 
+The software components are the basic building blocks of a SW system. 
+
+![Component](pictures/component01.svg)
+
+## Benefits
+
+If you design good 
 software components you will have the following benefits:
 
 * More efficient troubleshooting and maintenance
@@ -22,9 +28,11 @@ Not the implementation. This reduces the cognitive load[^3] required to design a
 Also, when working with the component you don't need to know how the component is used. You only need to make sure
 you fulfill the purpose and respect the interface.
 
-The purpose 
 
-## Purpose
+
+
+
+## Component Purpose
 
 The purpose of a software component *must* be clear. 
 
