@@ -6,7 +6,7 @@ component.
 
 The software components are the basic building blocks of a SW system. 
 
-<img src="pictures/component01.svg" alt="Component" heigth="20px"/>
+![Component](pictures/component01.svg)
 
 ## Benefits
 
