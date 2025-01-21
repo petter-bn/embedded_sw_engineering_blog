@@ -23,64 +23,84 @@ need to understand the limits of your fellow humans cognitive abilities.
 
 The software components should be possible to be seen as a black box, for anyone only using it's 
 functionality. That is when using the component you only need to know the purpose and the interface of the component.
-Not the implementation. This reduces the cognitive load[^3] required to design and code a software system.
+Not the implementation. This reduces the cognitive load[^3] required to design and code a software system. Components are the smallest elements in an embedded architecture. Read more about modularity, and why it is beneficial [here](modularity.html).
 
 Also, when working with the component you don't need to know how the component is used. You only need to make sure
 you fulfill the purpose and respect the interface.
 
+## Component Examples
 
-## Component Purpose
-
-The purpose of a software component *must* be clear.
-
-It the purpose is not clear the component will be hard to use and hard to maintain.
-
-In an embedded environment typical purposes of a components are:
+In an embedded system, typical purposes of a components are:
 
 * Controlling a device
 * Handling input
-* Handling a part of a MMI
-* Handling some stored data
+* Handling a [MMI](glossary.hmtl#MMI)
+* Processing information
 
-Or a component could provide services to other components:
+Or a component could provide services to other components.
+
+For example:
 
 * Logging
 * Handling configuration parameters
 * Scheduling
 * Communication
-* FFI
 * PID regulation
 * Encryption
 
-A camera-equipped lawnmower robot for example could have components where the purposes are:
+A [camera-equipped lawnmower robot](../example/CELR/index.html) for example could have components where the purposes are:
 
 * Drive motor control
 * Cutting motor control
 * Map handling
 * Trajectory planning
 
-## Component Interface
+## Properties of a good component
 
-The component interfaces are the *only* way it communicates with the surrounding system. 
-There are many different types of interfaces. Or to put it differently, the component interface 
-description must describe all the ways the component communicates with its environment.
+### Purpose
 
-### Function call interface
+The purpose of a software component *must* be clear.
 
-Let us start with the most common example: A function call interface provided by a component.
+It the purpose is not clear the component will be hard to use and hard to maintain. If it is hard to describe the purpose of the component, or the purpose consists of several not-very-related parts, the component might lack [cohesion](glossary.hmtl#cohesion) or [integrity](glossary.hmtl#integrity) and thus not provide [modularity](glossary.html#modularity).
 
-This kind of interface is supported by all common or less common languages for embedded SW
-engineering: C, C++, Java, Rust.
+If you can not describe the purpose of a component in one or two sentences, this a sign that your component might not be well defined.
 
-In this interface the caller is outside the component, the callee is inside the component and 
-the call is the interface. This kind of interface is so natural for most programmers that the
-specifics of it is not really considered. So lets write them down:
+See also [component integrity in layer architectures](layer_architecture.html#component_integrity).
 
 
-* Function calls take place in one execution thread, the caller waits until the callee returns.
-* It is bidirectional the caller provides data [^4] and the callee can return data [^5].
-* Function call interfaces are asymmetric. There is a sender and receiver.
+### Interface
 
+The component [interface](interface.html) provides the way to communicate with the comp0onent. They are the *only* the component communicates with the surrounding system. 
+
+There are many different types of interfaces:
+
+* Function call interface
+* Communication interface
+* Shared memory interface
+
+### Thread safety
+
+Many or most embedded systems of today use several processor cores, or multithreaded operating systems or both. It is likely or at least very possible that during the [development lifecycle](glossary.html#development_life_cycle) of a component it will be deployed in a multithreaded system.
+
+Thread safety can be achieved in many ways. (See also [concurrent embedded programming](concurrent_embedded_programming.html))
+programming
+
+The strategy for concurrency should be decided in the [architectural design](architecture).
+
+### Robustness
+
+TODO
+
+## What to do
+
+If you are writing a new SW product, make sure your components are well defined:
+
+* Decide the purpose of the component
+* Design the interface  [interface](interface.html)
+* Design the level of thread safety
+* Design robustness
+
+##
 
 ------
 
