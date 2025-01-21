@@ -34,7 +34,7 @@ In an embedded system, typical purposes of a components are:
 
 * Controlling a device
 * Handling input
-* Handling a [MMI](glossary.hmtl#MMI)
+* Handling a [MMI](glossary.hmtl)
 * Processing information
 
 Or a component could provide services to other components.
@@ -48,7 +48,7 @@ For example:
 * PID regulation
 * Encryption
 
-A [camera-equipped lawnmower robot](../example/CELR/index.html) for example could have components where the purposes are:
+A [camera-equipped lawnmower robot](example/CELR/index.html) for example could have components where the purposes are:
 
 * Drive motor control
 * Cutting motor control
@@ -61,11 +61,11 @@ A [camera-equipped lawnmower robot](../example/CELR/index.html) for example coul
 
 The purpose of a software component *must* be clear.
 
-It the purpose is not clear the component will be hard to use and hard to maintain. If it is hard to describe the purpose of the component, or the purpose consists of several not-very-related parts, the component might lack [cohesion](glossary.hmtl#cohesion) or [integrity](glossary.hmtl#integrity) and thus not provide [modularity](glossary.html#modularity).
+It the purpose is not clear the component will be hard to use and hard to maintain. If it is hard to describe the purpose of the component, or the purpose consists of several not-very-related parts, the component might lack [cohesion](glossary.hmtl#cohesion) or [integrity](glossary.hmtl#integrity) and thus not provide [modularity](glossary.html).
 
 If you can not describe the purpose of a component in one or two sentences, this a sign that your component might not be well defined.
 
-See also [component integrity in layer architectures](layer_architecture.html#component_integrity).
+See also [component integrity in layer architectures](layer_architecture.html).
 
 
 ### Interface
@@ -85,7 +85,7 @@ Many or most embedded systems of today use several processor cores, or multithre
 Thread safety can be achieved in many ways. (See also [concurrent embedded programming](concurrent_embedded_programming.html))
 programming
 
-The strategy for concurrency should be decided in the [architectural design](architecture).
+The strategy for concurrency should be decided in the [architectural design](architecture.html).
 
 ### Robustness
 
