@@ -72,7 +72,7 @@ See also [component integrity in layer architectures](layer_architecture.html).
 
 The component [interface](interface.html) provides the way to communicate with the comp0onent. They are the *only* the component communicates with the surrounding system. 
 
-There are many different types of interfaces:
+There are many different types of interfaces. Most common:
 
 * Function call interface
 * Communication interface
