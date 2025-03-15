@@ -17,7 +17,7 @@ specifics of it is not really considered. So lets write them down:
 
 * Function calls take place in one execution thread, the caller waits until the callee returns.
 * It is bidirectional the caller provides data [^4] and the callee can return data [^5].
-* Function call interfaces are asymmetric. There is a sender and receiver.
+* Function call interfaces are asymmetric. There is a caller and a called.
 
 ### Communication interfaces
 
