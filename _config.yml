@@ -1,0 +1,10 @@
+title: Embedded SW Engineering Blog
+description: An blog on how to do embedded SW engineering projects
+baseurl: "petter-bn/embedded_sw_engineering_blog/" # Add a base URL if your site is in a subdirectory
+url: "https://github.com/" # Replace with your site's URL
+theme: minima # Use a theme like "minima" or others available
+markdown: kramdown
+
+# Optional configuration
+permalink: pretty
+paginate: 5 # Number of posts per page
